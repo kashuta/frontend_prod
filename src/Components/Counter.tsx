@@ -1,8 +1,9 @@
 // counter component
-import React from 'react';
+import React, {useState} from 'react';
+import './Counter.scss';
 
 export const Counter = () => {
-    const [count, setCount] = React.useState(0);
+    const [count, setCount] = useState(0);
 
     const increment = () => {
         setCount(count + 1);
